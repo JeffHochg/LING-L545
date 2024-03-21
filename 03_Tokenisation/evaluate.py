@@ -1,4 +1,5 @@
-#-*- coding: utf- -*-
+#-*- coding: utf-8 -*-
+
 #!/usr/bin/env python
 
 # Code from:
@@ -12,6 +13,7 @@ def editDistance(r, h):
 	'''
 	This function is to calculate the edit distance of reference sentence and the hypothesis sentence.
 	Main algorithm used is dynamic programming.
+
 	Attributes: 
 		r -> the list of words produced by splitting reference sentence.
 		h -> the list of words produced by splitting hypothesis sentence.
@@ -35,6 +37,7 @@ def editDistance(r, h):
 def getStepList(r, h, d):
 	'''
 	This function is to get the list of steps in the process of dynamic programming.
+  
 	Attributes: 
 		r -> the list of words produced by splitting reference sentence.
 		h -> the list of words produced by splitting hypothesis sentence.
