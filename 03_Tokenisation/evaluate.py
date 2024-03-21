@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+
 #!/usr/bin/env python
 
 # Code from:
@@ -11,7 +12,6 @@ import numpy
 def editDistance(r, h):
 	'''
 	This function is to calculate the edit distance of reference sentence and the hypothesis sentence.
-
 	Main algorithm used is dynamic programming.
 
 	Attributes: 
@@ -37,7 +37,7 @@ def editDistance(r, h):
 def getStepList(r, h, d):
 	'''
 	This function is to get the list of steps in the process of dynamic programming.
-
+  
 	Attributes: 
 		r -> the list of words produced by splitting reference sentence.
 		h -> the list of words produced by splitting hypothesis sentence.
@@ -199,7 +199,7 @@ def wer(r, h):
 if __name__ == '__main__':
 	filename1 = sys.argv[1]
 	filename2 = sys.argv[2]
-	
+
 	with open(filename1, 'r', encoding="utf8") as ref:
 		rs = [r.split() for r in ref.readlines()]
 	with open(filename2, 'r', encoding="utf8") as hyp:
