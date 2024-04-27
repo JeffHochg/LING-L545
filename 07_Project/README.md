@@ -1,3 +1,17 @@
 # Project
+English/German translator by Word-Sense
 
-`PROJECT DESCRIPTION GOES HERE`
+This is a project that enables a user to search for a given English/German word, and receive translations based on word-sense. This is then communicated to the user through a graph. This is so that users can save lots of time checking through an online dictionary to make sure they have the correct work. One notable feature is that the program works recursively, so each translation will spawn off more branches. 
+
+This program works through Wiktionary data, ran through two algorithms (one to clean bulk data, and the second to create the graph). The Wikitionary data was sourced from https://kaikki.org/index.html. This data was extracted through Wiktextact (https://github.com/tatuylonen/wiktextract?tab=readme-ov-file). You could run this, but for the purposes of this project I used the dump on kaikki.org. In order to create the graph, I used Networkx (https://networkx.org/) to construct a network. Using matplotlib and some networkx tools, I turned the network into a graph. 
+
+There were a couple of problems in the creation of this project. First, originally I did not use the dumps from kaikki.org, but rather Wiktextract to get my data. Unfortunately, this took forever due to a lack of computing resources, and so eventually I turned to the dumps. This introduced a new challenge of having to sort through a bunch of superfluous data, which necessitated the creation of the first algorithm. In another vein, constructing graphs based on networks with multiple recursive processes, creates a really crowded graph. One thing I hope to change in the future is redoing the graph drawing. The final product is not how I envisioned this project to look at the end state, and modifying the visual portion of this is my first priority when making future changes. 
+
+### How to use
+You should just need to clone the repository to get all of the files needed to run. The most essential files are translations.txt, translationsG.txt, and recursive.py. With those three the core functionality is intact. dataGrabber.py, and the two JSON files are used to construct translations.txt and translationsG.txt. 
+
+To use recursive.py, first call it with python3. Then you'll pass it 3 arguments: The word you're searching for, the language code of the word (de for German or en for English), and a number for how many times you want the defintions to recurse and expand outwards. After a moment a picture by the name of "Graph.png" will appear in your directory, and this contains the graph with the outputs.
+
+To use dataGrabber.py, give it the file path of a JSON file containing Wiktionary data, and a target output file. dataGrabber.py will return only translation and sense data, for use with Recursive.py. The included outputs from this translations.txt and translationsG.txt, correspond to English and German data.
+
+
