@@ -1,0 +1,94 @@
+DELIMITERS = "." ;
+
+LIST Prop = np ;
+LIST Adj = adj ;
+LIST Unlike = "unlike" ;
+LIST Cnjadv = cnjadv ;
+LIST For = "for" ;
+LIST Comma = "," ;
+LIST PP = pp ;
+LIST ADV = adv ;
+LIST HAVE = "have" ;
+LIST BY = "by" ;
+LIST NOUN = n ;
+LIST NP = np ;
+LIST P1 = p1 ;
+LIST P1PN = "I" ;
+LIST COMP = comp ;
+LIST WHO = "who" ;
+LIST QMARK = "?" ;
+LIST ITG = itg ;
+LIST BE = "be" ;
+LIST PPRS = pprs ;
+LIST GER = ger ;
+LIST SUBS = subs ;
+LIST PRN = prn ;
+LIST DET = det ;
+SECTION
+
+# Remove the adjective reading of "unlike" if it is 
+# followed by a proper noun
+REMOVE Adj IF (0 Unlike) (1 Prop) ; 
+# ... unlike Livy ...
+
+#Remove cnjadv reading of for if the following item is not a comma
+REMOVE Cnjadv IF (0 For) (not -1 Comma) ;
+# ... Celtic Identity for the Bastarnae ...
+
+#Remove past participle readings 
+REMOVE PP IF (NEGATE -1 HAVE BARRIER(*) - ADV);
+#... Contradicted by Polybius...
+
+#Remove adv for by if the following item is a noun
+REMOVE ADV if (0 BY) (1 NOUN OR NP) ;
+#... Contradicted by Polybius ...
+
+#Remove adj if the preceding word is also an Adj
+REMOVE Adj if (-1 Adj) ;
+#... an actual contemporary of ... 
+
+#Remove first person versions of verbs if "I" or "Me" not before it
+REMOVE P1 if (NEGATE -1 HAVE BARRIER(*) - P1PN) ;
+#...who was writing...
+
+#Remove comparative adj if no following nouns exist
+REMOVE COMP if (NEGATE 1 HAVE BARRIER(*) - NOUN) ;
+#... 200 years later...
+
+#Remove interogative who if no question mark ever
+REMOVE ITG if (NEGATE 1 HAVE BARRIER(*) - QMARK) ;
+#"...who was writing..."
+
+#Remove nouns if the previous word is be
+REMOVE NOUN IF (-1 BE) ;
+#... who was writing ...
+
+#remove subs if the word before it is be
+#I dont know what subs is and theres no key
+#Later: Apprently subs is for something in Hungarian, I don't know why this english corpus has it
+#Anticipating the select rule in 2 rules
+REMOVE SUBS IF (NEGATE -1 HAVE BARRIER(*) - ADV) ;
+#... who was writing...
+
+#remove subs if the word before it is be
+#This rule is basically anticipating the next one, GER can't occur in the same context 
+REMOVE GER IF (NEGATE -1 HAVE BARRIER(*) - ADV);
+#... who was writing...
+
+#Select pprs if be before word
+SELECT PPRS IF (NEGATE -1 HAVE BARRIER(*) - ADV) ;
+#... who was writing...
+
+#Remove adj if theres not another adjective or noun following
+REMOVE Adj IF (NEGATE 1 HAVE BARRIER(*) - Adj OR NOUN) ;
+#... some 200 years later.
+
+#Similar to above rule
+#Remove pronoun if theres not another adject or noun following
+REMOVE PRN IF (NEGATE 1 HAVE BARRIER(*) - Adj OR NOUN) ; 
+#... some 200 years later.
+
+#Similar to above rule
+REMOVE DET IF (NEGATE 1 HAVE BARRIER(*) - Adj OR NOUN) ;
+
+

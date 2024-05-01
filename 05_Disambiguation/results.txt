@@ -1,0 +1,103 @@
+"<However>"
+	"however" adv
+"<,>"
+	"," cm
+"<a>"
+	"a" det ind sg
+"<Celtic>"
+	"Celtic" adj
+"<identity>"
+	"identity" n sg
+"<for>"
+	"for" pr
+;	"for" cnjadv REMOVE:35
+"<the>"
+	"the" det def sp
+"<Bastarnae>"
+	"Bastarnae" n pl
+"<is>"
+	"be" vbser pres p3 sg
+"<apparently>"
+	"apparently" adv
+"<contradicted>"
+	"contradict" vblex past
+;	"contradict" vblex pp REMOVE:39
+"<by>"
+	"by" pr
+;	"by" adv REMOVE:43
+"<Polybius>"
+	"Polybius" np ant
+"<(>"
+	"(" lpar
+"<writing>"
+	"write" vblex pprs SELECT:79
+;	"writing" n sg SELECT:79
+;	"write" vblex subs REMOVE:70
+;	"write" vblex ger REMOVE:75
+"<ca.>"
+	"ca." abbr
+"<150>"
+	"150" num
+"<BC>"
+	"BC" abbr
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<who>"
+	"who" prn rel an mf sp
+;	"who" prn itg mf sp REMOVE:59
+"<was>"
+	"be" vbser past p3 sg
+;	"be" vbser past p1 sg REMOVE:51
+"<an>"
+	"a" det ind sg
+"<actual>"
+	"actual" adj
+"<contemporary>"
+	"contemporary" n sg
+;	"contemporary" adj REMOVE:47
+"<of>"
+	"of" pr
+"<the>"
+	"the" det def sp
+"<events>"
+	"event" n pl
+"<described>"
+	"describe" vblex past
+;	"describe" vblex pp REMOVE:39
+"<,>"
+	"," cm
+"<unlike>"
+	"unlike" pr
+;	"unlike" adj REMOVE:31
+"<Livy>"
+	"Livy" np ant
+"<,>"
+	"," cm
+"<who>"
+	"who" prn rel an mf sp
+;	"who" prn itg mf sp REMOVE:59
+"<was>"
+	"be" vbser past p3 sg
+;	"be" vbser past p1 sg REMOVE:51
+"<writing>"
+	"write" vblex pprs
+;	"writing" n sg REMOVE:63
+;	"write" vblex subs REMOVE:70
+;	"write" vblex ger REMOVE:75
+"<some>"
+	"some" adv
+;	"some" adj REMOVE:83
+;	"some" det qnt sp REMOVE:92
+;	"some" prn ind mf pl REMOVE:88
+"<200>"
+	"200" num
+"<years>"
+	"year" n pl
+"<later>"
+	"later" adv
+;	"late" adj sint comp REMOVE:55
+"<.>"
+	"." sent
+
