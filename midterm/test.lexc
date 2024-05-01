@@ -1,0 +1,38 @@
+Multichar_Symbols %<perf%>
+
+%<o_sg1%> %<o_sg2%> %<o_sg3%>
+%<o_pl1%> %<o_pl2%> %<o_pl3%>
+
+%<s_sg1%> %<s_sg2%> %<s_sg3%>
+%<s_pl1%> %<s_pl2%> %<s_pl3%>
+
+%<v%> %<tv%>
+
+%>
+
+LEXICON root
+object ;
+
+LEXICON object
+xi:xi subject ;
+xin:xin subject ;
+xat:xat subject ;
+x:x subject ;
+xoj:xoj subject ;
+xix:xix subject ;
+xe:xe subject ;
+
+LEXICON subject
+nu:nu stem ; 
+a:a stem ;
+ru:ru stem ;
+u:u stem ;
+tu:tu stem ;
+qa:qa stem ;
+ni:ni stem ;
+i:i stem ; 
+'i:'i stem ;
+ki:ki stem ;
+
+LEXICON stem
+tz'ät:tz'ät # ;

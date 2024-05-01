@@ -1,0 +1,65 @@
+Multichar_Symbols %<perf%>
+
+%<o_sg1%> %<o_sg2%> %<o_sg3%> !objects, by number and person
+%<o_pl1%> %<o_pl2%> %<o_pl3%>
+
+%<s_sg1%> %<s_sg2%> %<s_sg3%> !subjects, by number and person
+%<s_pl1%> %<s_pl2%> %<s_pl3%>
+
+%<v%> %<tv%> !verb, transitive verb
+
+%> !Morpheme Boundary
+
+!Define Lexicons
+
+LEXICON Root
+object ;
+
+LEXICON object
+%<o_sg1%>:xi subjectXi ;
+%<o_sg1%>:xin subjectXin ;
+%<o_sg2%>:xat subject ;
+%<o_sg3%>:x subjectX ;
+%<o_pl1%>:xoj subjectXoj ;
+%<o_pl2%>:xix subject ;
+%<o_pl3%>:xe subjectXe ;
+
+LEXICON subject
+%<s_sg1%>:nu stem ;
+%<s_sg3%>:ru stem ;
+%<s_pl1%>:qa stem ;
+%<s_pl3%>:ki stem ;
+
+LEXICON subjectXi
+%<s_sg3%>:ru stem ;
+%<s_pl2%>:ni stem ;
+
+
+LEXICON subjectXin !To help limit overproduction
+%<s_sg2%>:a stem ;
+%<s_pl3%>:ki stem ;
+
+LEXICON subjectX !To help limit overproduction
+%<s_sg2%>:a stem ;
+%<s_pl1%>:qa stem ;
+%<s_pl2%>:i stem ;
+%<s_pl2%>:u stem ;
+%<s_sg1%>:nu stem ;
+%<s_pl3%>:ki stem ;
+
+LEXICON subjectXoj !To help limit overproduction
+%<s_sg2%>:a stem ;
+%<s_sg3%>:tu stem ;
+%<s_pl2%>:'i stem ;
+%<s_pl3%>:ki stem ;
+
+LEXICON subjectXe
+%<s_sg2%>:a stem ;
+%<s_pl3%>:ki stem ;
+%<s_pl2%>:'i stem ;
+%<s_pl1%>:qa stem ;
+%<s_sg3%>:ru stem ;
+%<s_sg1%>:nu stem ;
+
+LEXICON stem
+tz'ät%<v%>%<tv%>:tz'ät # ;

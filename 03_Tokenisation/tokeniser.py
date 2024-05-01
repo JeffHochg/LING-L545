@@ -1,4 +1,4 @@
-with open("ja-ud.conllu") as file:
+ith open("ja-ud.conllu") as file:
 	#Grab first line
 	currentLine = file.readline()
 	
