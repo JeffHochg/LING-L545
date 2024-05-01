@@ -1,0 +1,217 @@
+Multichar_Symbols
+%<sing%> %<plur%> !plurality, singular and plural
+%<nom%> %<akk%> %<dat%> %<gen%> !case, Nominative, Accusative, Dative, Genitive
+%<masc%> %<fem%> %<neu%> %<p%> !gender, Masculine, Feminine, Neuter, and a placeholder for Plural
+
+LEXICON Root
+article ;
+
+LEXICON article
+%<plur%>%<p%>:die PRootsNA ;
+%<plur%>%<p%>:den PRootsD ;
+%<plur%>%<p%>:der PRootsG ;
+%<sing%>%<masc%>:der SRootsMN ;
+%<sing%>%<masc%>:den SRootsMA ;
+%<sing%>%<masc%>:dem SRootsMD ;
+%<sing%>%<masc%>:des SRootsMG ;
+%<sing%>%<fem%>:die SRootsFNA ;
+%<sing%>%<fem%>:der SRootsFDG ;
+%<sing%>%<neu%>:das SRootsNNA ;
+%<sing%>%<neu%>:dem SRootsND ;
+%<sing%>%<neu%>:des SRootsNG ;
+
+LEXICON PRootsD !Dative 
+%<dat%>:Mütter Dative ;
+%<dat%>:Väter Dative ;
+%<dat%>:Schwestern # ;
+%<dat%>:Brüder Dative ;
+%<dat%>:Häuser Dative ; 
+%<dat%>:Betten # ;
+%<dat%>:Tische Dative ;
+%<dat%>:Türen # ;
+%<dat%>:Autos # ;
+%<dat%>:Flugzeuge Dative ;
+%<dat%>:Städte Dative ;
+%<dat%>:Züge Dative ;
+%<dat%>:Länder Dative ;
+%<dat%>:Berge Dative ;
+%<dat%>:Frühstücke Dative ;
+%<dat%>:Mittagessen # ;
+%<dat%>:Abendessen # ;
+%<dat%>:Busse # ;
+%<dat%>:Ebenen # ;
+
+LEXICON PRootsG !Genitive
+%<gen%>:Mütter # ;
+%<gen%>:Väter # ;
+%<gen%>:Schwestern # ;
+%<gen%>:Brüder # ;
+%<gen%>:Häuser # ;
+%<gen%>:Betten # ;
+%<gen%>:Tische # ;
+%<gen%>:Türen # ;
+%<gen%>:Autos # ;
+%<gen%>:Snacks # ;
+%<gen%>:Busse # ;
+%<gen%>:Flugzeuge # ;
+%<gen%>:Städte # ;
+%<gen%>:Züge # ;
+%<gen%>:Berge # ;
+%<gen%>:Ebenen # ;
+%<gen%>:Frühstücke # ;
+%<gen%>:Mittagessen # ;
+%<gen%>:Abendessen # ;
+%<dat%>:Snacks # ;
+
+LEXICON PRootsNA ! Nominative and Accusative forms share the same article and form in Nominative and Accusative
+%<nom%>:Mütter # ;
+%<akk%>:Mütter # ;
+%<nom%>:Väter # ;
+%<akk%>:Väter # ;
+%<nom%>:Schwestern # ;
+%<akk%>:Schwestern # ;
+%<nom%>:Brüder # ;
+%<akk%>:Brüder # ;
+%<nom%>:Häuser # ;
+%<akk%>:Häuser # ;
+%<nom%>:Betten # ;
+%<akk%>:Betten # ;
+%<nom%>:Tische # ;
+%<akk%>:Tische # ;
+%<nom%>:Türen # ;
+%<akk%>:Türen # ;
+%<nom%>:Autos # ;
+%<akk%>:Autos # ;
+%<nom%>:Busse # ;
+%<akk%>:Busse # ;
+%<nom%>:Flugzeuge # ;
+%<akk%>:Flugzeuge # ;
+%<nom%>:Züge # ;
+%<akk%>:Züge # ;
+%<nom%>:Städte # ;
+%<akk%>:Städte # ;
+%<nom%>:Länder # ;
+%<akk%>:Länder # ;
+%<gen%>:Länder # ;
+%<nom%>:Berge # ;
+%<akk%>:Berge # ;
+%<nom%>:Ebenen # ;
+%<akk%>:Ebenen # ;
+%<nom%>:Frühstücke # ;
+%<akk%>:Frühstücke # ;
+%<nom%>:Mittagessen # ;
+%<akk%>:Mittagessen # ;
+%<nom%>:Abendessen # ;
+%<akk%>:Abendessen # ;
+%<nom%>:Snacks # ;
+%<akk%>:Snacks # ;
+
+LEXICON SRootsFNA !Singular feminine nouns share a nominative and accusative form with the same article
+%<nom%>:Stadt # ;
+%<akk%>:Stadt # ;
+%<nom%>:Mutter # ;
+%<akk%>:Mutter # ;
+%<nom%>:Schwester # ;
+%<akk%>:Schwester # ;
+%<nom%>:Tür # ;
+%<akk%>:Tür # ;
+%<nom%>:Ebene # ;
+%<akk%>:Ebene # ;
+
+LEXICON SRootsFDG !Singular feminine nouns share a dative and genitive form with the same article
+%<dat%>:Stadt # ;
+%<gen%>:Stadt # ;
+%<dat%>:Mutter # ;
+%<gen%>:Mutter # ;
+%<dat%>:Schwester # ;
+%<gen%>:Schwester # ;
+%<dat%>:Tür # ;
+%<gen%>:Tür # ;
+%<dat%>:Ebene # ;
+%<gen%>:Ebene # ;
+
+LEXICON SRootsND
+%<dat%>:Haus # ;
+%<dat%>:Bett # ;
+%<dat%>:Auto # ;
+%<dat%>:Flugzeug # ;
+%<dat%>:Land # ;
+%<dat%>:Frühstück # ;
+%<dat%>:Mittagessen # ;
+%<dat%>:Abendessen # ;
+
+LEXICON SRootsNG
+%<gen%>:Haus GenitiveES ;
+%<gen%>:Bett Genitive ;
+%<gen%>:Auto Genitive ;
+%<gen%>:Flugzeug Genitive ;
+%<gen%>:Land Genitive ;
+%<gen%>:Frühstück Genitive ;
+%<gen%>:Mittagessen Genitive ;
+%<gen%>:Abendessen Genitive ;
+
+LEXICON SRootsNNA
+%<nom%>:Haus # ;
+%<akk%>:Haus # ;
+%<nom%>:Bett # ;
+%<akk%>:Bett # ;
+%<nom%>:Auto # ;
+%<akk%>:Auto # ;
+%<nom%>:Flugzeug # ;
+%<akk%>:Flugzeug # ;
+%<nom%>:Land # ;
+%<akk%>:Land # ;
+%<nom%>:Frühstück # ;
+%<akk%>:Frühstück # ;
+%<nom%>:Mittagessen # ;
+%<akk%>:Mittagessen # ;
+%<nom%>:Abendessen # ;
+%<akk%>:Abendessen # ;
+
+LEXICON SRootsMA
+%<akk%>:Vater # ;
+%<akk%>:Bruder # ;
+%<akk%>:Tisch # ;
+%<akk%>:Bus # ;
+%<akk%>:Zug # ;
+%<akk%>:Berg # ;
+%<akk%>:Snack # ;
+
+LEXICON SRootsMD
+%<dat%>:Vater # ;
+%<dat%>:Bruder # ;
+%<dat%>:Tisch # ;
+%<dat%>:Bus # ;
+%<dat%>:Zug # ;
+%<dat%>:Berg # ;
+%<dat%>:Snack # ;
+
+LEXICON SRootsMG
+%<gen%>:Vater Genitive ;
+%<gen%>:Bruder Genitive ;
+%<gen%>:Tisch Genitive ;
+%<gen%>:Bus GenitiveSES ;
+%<gen%>:Zug Genitive ;
+%<gen%>:Berg Genitive ;
+%<gen%>:Snack Genitive ;
+
+LEXICON SRootsMN
+%<nom%>:Vater # ;
+%<nom%>:Bruder # ;
+%<nom%>:Tisch # ;
+%<nom%>:Bus # ;
+%<nom%>:Zug # ;
+%<nom%>:Berg # ;
+%<nom%>:Snack # ;
+
+LEXICON Dative
+:n # ;
+
+LEXICON Genitive
+:s # ;
+
+LEXICON GenitiveES
+:es # ;
+
+LEXICON GenitiveSES
+:ses # ;
